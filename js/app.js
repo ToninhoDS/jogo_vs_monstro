@@ -25,20 +25,21 @@ new Vue({
         return this.life =  this.life + 10, 15, 5;
      },
      Esp(){
-        this.ataq = 30, 10,15
+        this.ataq =  Math.floor(Math.random() * 30 + 10 + 15) 
         if(this.monster > 0){
-            return this.monster = this.monster - this.ataq;
+            return this.monster =  this.monster - this.ataq;
         }
      },
      Ta(){
-        this.ataq = 5,10
+        this.ataq =  Math.floor(Math.random() * 10  +5) 
+        
         if(this.monster > 0){
             return this.monster = this.monster - this.ataq;
         }
          
      },
      Monster(){
-         this.ataq = 5,10,20
+         this.ataq = Math.floor(Math.random() * 5+ 10 + 20) 
          return this.life = this.life - this.ataq;
      }
    },
